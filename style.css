@@ -19,6 +19,7 @@ main{
 }
 h1{
     text-align: center;
+    color: white;
 }
 #block-title p{
     text-align: center;
@@ -36,8 +37,6 @@ form label{
 }
 input, select{
     margin-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     width: 100%;
 }
 #phone-format-example p{
@@ -53,18 +52,34 @@ div p{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-.input-radio{
-  max-width: 15px;
-}
-.platform-class{
-    display: grid;
+    margin-bottom: 1rem;
 }
 
+.platform-class .input-radio{
+    margin: 0 0.5rem 0 0.5rem;
+    max-width: 15px;
+}
+.platform-class label{
+    display: block;
+}
+.own-skills input{
+    max-width: 15px;
+    display: inline-block;
+    margin: 0 0.5rem 0 0.5rem;
+}
+.submit-button input{
+    background-color: rgb(241, 147, 58);
+}
 
-@media (max-width: 580px){
+textarea{
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+}
+
+/* @media (max-width: 580px){
     main{
         max-width: 560px;
         margin: 0px auto;
     }
-}
+} */

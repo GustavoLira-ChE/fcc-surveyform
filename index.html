@@ -47,14 +47,32 @@
                     <option value="other">Other</option>
                 </select>
             </div>
+            <!-- Description where found information about me -->
             <div class="container platform-class">
                 <p>Which platform did you use to know about me?</p>
                 <label><input type="radio" name="platform" value="gitHub" class="input-radio">GitHub</label>
                 <label><input type="radio" name="platform" value="linkedIn" class="input-radio">LinkedIn</label>
                 <label><input type="radio" name="platform" value="personalWebsite" class="input-radio">Personal website</label>
             </div>
-
-           <input type="submit" value="Submit">
+            <!-- Skills that future co-worker are interesting about me -->
+            <div class="container own-skills">
+                <p>Which of my current skills are you interested in?</p>
+                <input type="checkbox" id="skill1" name="skill1" value="HTML">
+                <label for="skill1">HTML</label><br>
+                <input type="checkbox" id="skill2" name="skill2" value="CSS">
+                <label for="skill2">CSS (style-component, Tailwind)</label><br>
+                <input type="checkbox" id="skill3" name="skill3" value="JavaScript">
+                <label for="skill3">JavaScript (React.JS, Node.JS)</label><br>
+                <input type="checkbox" id="skill4" name="skill4" value="Python">
+                <label for="skill4">Python (Django, Flask)</label><br>
+            </div>
+            <div class="container text-area">
+                <p>If you'd like to share some other relevant information please write in this area.</p>
+                <textarea name="extraInfo" id="extraInfo" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="container submit-button">
+                <input type="submit" value="Submit" >
+            </div>
         </form>
    </main> 
 </body>
